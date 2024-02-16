@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skenvo Te - Sign In</title>
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+</head>
+<body>
+    <!-- bg -->
+    <img src="{% static 'img/bg-vote.jpg' %}"  class="bg">
+    <!-- main -->
+    <div class="container">
+        <div class="container second">
+            <div class="title">
+            <img src="{% static 'img/skenvote.jpg' %}" alt="">
+            </div>
+            <div class="welcome">
+                <p>Selamat datang di SKENVOTE ! &#128075</p>
+            </div>
+            <div class="message">
+                <p>et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi</p>
+                <p>eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci</p>
+            </div>
+            <div class="link">
+                <a href="{% url 'login' %}">Masuk ke akun anda</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

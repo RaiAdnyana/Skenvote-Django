@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+/* aboutus */
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #dbdbdb;
+}
+/* end */
+
+/* Menu */
+.top ul li a{
+    display: flex;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: -.6px;
+}
+
+ul{
+    width: 20%;
+    display: flex;
+    list-style: none;
+}
+
+.top{
+    position:fixed;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 5px 10px rgb(120, 120, 120,50%);    
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    z-index: 1;
+    top: 0;
+}
+
+.logo img{
+    display: flex;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu1{ 
+    width: auto;
+    margin-left: 2rem;
+}
+
+.menu2{
+    position: absolute;
+    right: -5%;
+    gap: 2rem;
+}
+
+.menu2 span{
+    position: relative;
+    background: #365486;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    top: -10px;
+    transition: .5s;
+}
+
+.menu2 span:hover{
+    background-color: #3f629f;
+}
+/*Menu Selesai*/
+
+/* About */
+.story {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 95%;
+    height: 500px;
+    margin-top: 100px;
+    background-color: #b7b7b7;
+    border-radius: 30px;
+}
+
+.story h1 {
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 50px;
+}
+
+.story h1 span {
+    color: #365486;
+}
+
+.story p {
+    width: 90%;
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* About Selesai */
+
+
+/* tim */
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.team h1 {
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 50px;
+}
+
+.team h1 span {
+    color: #365486;
+}
+
+.profil{
+    width: 90%;
+    height: 600px;
+    display :flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid #b7b7b7;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+.foto{
+    border-radius: 100%;
+    width: 400px;
+    object-fit: cover;
+    height: 400px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.teks {
+    margin-left: 50px;
+    align-items: start;
+}
+
+    .teks h1 {
+        font-family: 'Poppins',sans-serif;
+        color: black;
+        font-size: 45px;
+    }
+
+    .teks p {
+        font-family: 'Poppins',sans-serif;
+        font-size: 23px;
+        color: black;
+        font-weight: 500;
+    }
+
+.medsos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 150px;
+}
+
+.medsos a {
+    color: black;
+    list-style: none;
+    margin-right: 20px;
+    transition: 0.9s ease-out;
+}
+
+.medsos a i {
+    font-size: 25px;
+}
+
+.medsos a:hover {
+    transform: translateY(-2px);
+    
+}
+
+
+/* tim end */
+
+/* FOOTER */
+.footer{
+    height: 50vh;
+    width: 100%;
+    background-color: transparent;
+    border-top: 2px solid rgb(201, 201, 201);
+    display: grid;
+    position: relative;
+    bottom: 0;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 3rem;
+}
+.footer>p{
+    position: relative;
+    bottom: -50px;
+    margin: 0 auto;
+}
+.footer-konten{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.footer-konten>a{
+    font-size: 25px;
+    margin-left: 30%;
+    text-decoration: none;
+    color: #333333;
+    scale: .95;
+}
+.footer-konten>a:hover{
+    scale: 1;
+    color: var(--blue-color);
+}
+.logo-skenvote {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid rgb(201, 201, 201) ;
+    border-radius: 50%;
+}
+.logo-skenvote img{
+    width: 150px;
+    border-radius: 20px;
+}
+.title-end{
+    width: 40%;
+}
+.title-end h3{
+    font-size: 22px;
+    color: #333333;
+}
+.title-end i{
+    font-size: 2rem;
+    margin: 10px 5px;
+    list-style: none;
+    color: #333333;
+}
+.title-end i:hover{
+    color: var(--blue-color);
+}
+

@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>homepage</title>
+</head>
+<body>
+    <div class="aboutus">
+
+        <!-- Menu -->
+        <nav class="top">
+            <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'img/IMG_3732.JPG' %}" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul class="menu1">
+                    <li><a href="###">About</a></li>
+                </ul>
+                <ul class="menu2">
+                    <li><a href="###">Login</a></li>
+                    <li><a href="###"><span>Sign Up</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- About -->
+        <div class="story">
+            <h1>About <span>Us</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quam animi corporis, vitae aliquid provident natus illum qui distinctio voluptatibus iusto temporibus voluptatem atque perferendis corrupti necessitatibus ducimus eligendi quo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat excepturi ratione assumenda, repellendus temporibus iusto id suscipit vel nisi architecto tempora dolorum laudantium mollitia culpa! Nisi minima ipsam sequi rem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident reprehenderit perferendis inventore voluptates explicabo iste aut dignissimos obcaecati tempora quos voluptatem ipsam dolore, vero minus possimus id ab corporis?</p>
+        </div>
+
+        <!-- Tim -->
+        <div class="team">
+            <h1>Our <span>Team</span></h1>
+            <div class="profil">
+                <img src="img/profil DC.jpg"class="foto">
+                <div class="teks">
+                  <h1>Wahyu Putra </h1> 
+                    <p>Frontend</p>
+                    <div class="medsos">
+                        <a href="https://github.com/wahyuputradinata"> <i class="fab fa fa-github"></i></a> 
+                        <a href="https://wa.me/6285901349809"> <i class="fab fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/wyn_whyuptra"><i class="fab fa fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="img/gusde team.jpg"class="foto">
+                <div class="teks">
+                <h1>Tugus Ambara</h1> 
+                <p>Frontend</p>
+                    <div class="medsos">
+                        <a href="https://github.com/gusdesindu"> <i class="fab fa fa-github"></i></a>
+                        <a href="https://wa.me/6289503705134"> <i class="fab fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/tugusde23"><i class="fab fa fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="img/dekno team.jpg"class="foto">
+                <div class="teks">
+                    <h1>Malvino Sukadana</h1> 
+                    <p>Frontend</p>
+                    <div class="medsos">
+                        <a href="https://github.com/MALpin16"> <i class="fab fa fa-github"></i></a>
+                        <a href="https://wa.me/6285337862843"> <i class="fab fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/kadek_malvino"><i class="fab fa fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+          
+            </div>
+            <div class="profil">
+                <img src="img/rai team.jpg"class="foto">
+                <div class="teks">
+                    <h1>Rai Adnyana</h1> 
+                    <p>Frontend</p>
+                    <div class="medsos">
+                        <a href="https://github.com/RaiAdnyana"> <i class="fab fa fa-github"></i></a>
+                        <a href="https://wa.me/6281936191404"> <i class="fab fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/_deraad?igsh=MTI3OGt1M2Nzc2RhdQ=="><i class="fab fa fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="img/gungde team.jpg"class="foto">
+                <div class="teks">
+                    <h1>Gungde Pradana</h1> 
+                    <p>Backend</p>
+                    <div class="medsos">
+                        <a href="https://github.com/rdtyprdn"> <i class="fab fa fa-github"></i></a>
+                        <a href="https://wa.me/6282237304726"> <i class="fab fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/raditya_prdn"><i class="fab fa fa-instagram"></i></a>  
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-konten">
+                <div class="logo-skenvote">
+                    <a href="{% url 'home' %}"><img src="{% static 'img/IMG_3732.JPG' %}" alt=""></a>
+                </div>
+                <div class="title-end">
+                    <h3>Memudahkan pembuatan pendapat dan survei dengan instan dan real-time secara gratis.</h3>
+                <div class="icons">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                    
+                </div>
+                </div>
+                <a href="{% url 'about' %}">About</a>
+            </div>
+            <p>&copy 2024 SKENVOTE. All Rights Reserved.</p>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

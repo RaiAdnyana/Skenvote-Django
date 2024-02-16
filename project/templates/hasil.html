@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'hasil.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>homepage</title>
+</head>
+<body>
+    <div class="homepage">
+        <nav class="top">
+            <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'img/IMG_3732.JPG' %}" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul class="menu1">
+                    <li><a href="Voting.html">About</a></li>
+                </ul>
+                <ul class="menu2">
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="Voting.html"><span>Sign Up</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-result">
+            <div class="konten-result">
+                <h2 class="Judul" id="judul">Vote Result</h2>
+                oleh <span>USER</span>
+                <p>Total Votes: 0000</p>
+                <div class="border-foto-result">
+                    <div class="fotoKandidat1-result" id="kandidat1">
+                        <img src="soccer.png" alt="" id="foto1" width="" height="180px">
+                        <div class="input11">
+                          <h2 class="title-result"> Total Suara :</h2>
+                          <h1 class="title-persen">100% </h1>
+                        </div>
+                    </div>
+                    <div class="fotoKandidat2-result" id="kandidat2">
+                        <img src="gamer.png" alt="" id="foto2" width="" height="180px">
+                        <div class="input22">
+                          <h2 class="title-result-2"> Total Suara :</h2>
+                          <h1 class="title-persen-2">50%</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="vote">
+                        <a href="index.html"><button>Live Result<span><i class='bx bxs-right-arrow-alt'></i></span></button></a>
+                    </div>
+                    <div class="result">
+                        <a href=""><button><span></span>Back To Vote</button></a>
+                    </div>
+                    <div class="share">
+                        <a href=""><button><span><i class='bx bxs-share-alt' ></i></span>Share</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lock">
+            <i class='bx bxs-lock-alt'></i>One vote per IP-Address allowed.
+        </div>
+        
+        <div class="footer">
+            <div class="footer-konten">
+              <div class="logo-skenvote">
+                <a href="{% url 'home' %}"><img src="{% static 'img/IMG_3732.JPG' %}" alt=""></a>
+              </div>
+              <div class="title-end">
+                <h3>
+                  Memudahkan pembuatan pendapat dan survei dengan instan dan real-time
+                  secara gratis.
+                </h3>
+                <div class="icons">
+                  <a href="#"><i class="bx bxl-github"></i></a>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                  <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#"><i class="bx bxl-discord-alt"></i></a>
+                </div>
+              </div>
+              <a href="{% url 'about' %}">About</a>
+            </div>
+            <p>&copy 2024 SKENVOTE. All Rights Reserved.</p>
+          </div>
+      
+          <script src="script.js"></script>
+        </body>
+      </html>
+
+    <script src="script.js"></script>
+</body>
+</html>
