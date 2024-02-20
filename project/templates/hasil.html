@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'hasil.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>homepage</title>
+    <title>SkenVote - Voting</title>
 </head>
 <body>
     <div class="homepage">
@@ -30,20 +30,48 @@
                 oleh <span>USER</span>
                 <p>Total Votes: 0000</p>
                 <div class="border-foto-result">
-                    <div class="fotoKandidat1-result" id="kandidat1">
-                        <img src="soccer.png" alt="" id="foto1" width="" height="180px">
-                        <div class="input11">
-                          <h2 class="title-result"> Total Suara :</h2>
-                          <h1 class="title-persen">100% </h1>
+                  
+                  <div class="border-foto-result">
+
+                    
+                      <!-- <div class="fotoKandidat1-result" id="kandidat1">
+                        {% for x in image_pics %}
+                          <img src="{{ x.image.url }}" alt="{{ x.caption }}"  id="foto{{ forloop.counter }}"  class="foto12" width="" height="180px">
+                        {% endfor %}
+                          <div class="input11">
+                            <h2 class="title-result"> Total Suara :</h2>
+                            <h1 class="title-persen">100% </h1>
+                          </div>
+                      </div>
+
+                    
+                      <div class="fotoKandidat2-result" id="kandidat2">
+                        {% for x in gambar_pics %}
+                          <img src="{{ x.foto.url }}" alt="{{ x.deskripsi }}" id="foto{{ forloop.counter }}" class="foto12" width="" height="180px">
+                        {% endfor %}
+                          <div class="input22">
+                            <h2 class="title-result-2"> Total Suara :</h2>
+                            <h1 class="title-persen-2">50%</h1>
+                          </div>
+                      </div> -->
+
+                      
+                        <div class="fotoKandidat1-result" id="kandidat1">
+                            <img src="soccer.png" alt="" id="foto1" class="foto12" width="" height="180px">
+                            <div class="input11">
+                              <h2 class="title-result"> Total Suara :</h2>
+                              <h1 class="title-persen">100% </h1>
+                            </div>
                         </div>
-                    </div>
-                    <div class="fotoKandidat2-result" id="kandidat2">
-                        <img src="gamer.png" alt="" id="foto2" width="" height="180px">
-                        <div class="input22">
-                          <h2 class="title-result-2"> Total Suara :</h2>
-                          <h1 class="title-persen-2">50%</h1>
+                        <div class="fotoKandidat2-result" id="kandidat2">
+                            <img src="gamer.png" alt="" id="foto2" class="foto12" width="" height="180px">
+                            <div class="input22">
+                              <h2 class="title-result-2"> Total Suara :</h2>
+                              <h1 class="title-persen-2">50%</h1>
+                            </div>
                         </div>
-                    </div>
+
+                  </div>
                 </div>
                 <div class="button">
                     <div class="vote">
@@ -83,11 +111,7 @@
             </div>
             <p>&copy 2024 SKENVOTE. All Rights Reserved.</p>
           </div>
-      
-          <script src="script.js"></script>
-        </body>
-      </html>
 
-    <script src="script.js"></script>
+    <script src="></script>
 </body>
 </html>
