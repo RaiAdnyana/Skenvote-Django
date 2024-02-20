@@ -9,7 +9,7 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"/>
-    <title>homepage</title>
+    <title>SkenVote - About</title>
 </head>
 <body>
     <div class="aboutus">
@@ -21,18 +21,18 @@
             </div>
             <div class="menu">
                 <ul class="menu1">
-                    <li><a href="###">About</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
                 </ul>
                 <ul class="menu2">
-                    <li><a href="###">Login</a></li>
-                    <li><a href="###"><span>Sign Up</span></a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}"><span>Sign Up</span></a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- About -->
         <div class="story">
-            <h1>About <span>Us</span></h1>
+            <h1>Tentang <span>Kami</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quam animi corporis, vitae aliquid provident natus illum qui distinctio voluptatibus iusto temporibus voluptatem atque perferendis corrupti necessitatibus ducimus eligendi quo.</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat excepturi ratione assumenda, repellendus temporibus iusto id suscipit vel nisi architecto tempora dolorum laudantium mollitia culpa! Nisi minima ipsam sequi rem!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident reprehenderit perferendis inventore voluptates explicabo iste aut dignissimos obcaecati tempora quos voluptatem ipsam dolore, vero minus possimus id ab corporis?</p>
@@ -42,7 +42,7 @@
         <div class="team">
             <h1>Our <span>Team</span></h1>
             <div class="profil">
-                <img src="img/profil DC.jpg"class="foto">
+                <img src="{% static 'img/profil DC.jpg' %}"class="foto">
                 <div class="teks">
                   <h1>Wahyu Putra </h1> 
                     <p>Frontend</p>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="profil">
-                <img src="img/gusde team.jpg"class="foto">
+                <img src="{% static 'img/gusde team.jpg' %}"class="foto">
                 <div class="teks">
                 <h1>Tugus Ambara</h1> 
                 <p>Frontend</p>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="profil">
-                <img src="img/dekno team.jpg"class="foto">
+                <img src="{% static 'img/dekno team.jpg' %}"class="foto">
                 <div class="teks">
                     <h1>Malvino Sukadana</h1> 
                     <p>Frontend</p>
@@ -82,10 +82,10 @@
           
             </div>
             <div class="profil">
-                <img src="img/rai team.jpg"class="foto">
+                <img src="{% static 'img/rai team.jpg' %}"class="foto">
                 <div class="teks">
                     <h1>Rai Adnyana</h1> 
-                    <p>Frontend</p>
+                    <p>Frontend & Backend</p>
                     <div class="medsos">
                         <a href="https://github.com/RaiAdnyana"> <i class="fab fa fa-github"></i></a>
                         <a href="https://wa.me/6281936191404"> <i class="fab fa fa-whatsapp"></i></a>
@@ -95,9 +95,9 @@
                 </div>
             </div>
             <div class="profil">
-                <img src="img/gungde team.jpg"class="foto">
+                <img src="{% static 'img/gungde team.jpg' %}"class="foto">
                 <div class="teks">
-                    <h1>Gungde Pradana</h1> 
+                    <h1>Gungde Raditya</h1> 
                     <p>Backend</p>
                     <div class="medsos">
                         <a href="https://github.com/rdtyprdn"> <i class="fab fa fa-github"></i></a>
