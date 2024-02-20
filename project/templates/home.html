@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link rel="stylesheet" href="{% static 'voting.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>homepage</title>
+    <title>SkenVote - Homepage</title>
 </head>
 <body>
     <div class="homepage">
@@ -16,9 +16,7 @@
             </div>
             <div class="menu">
                 <ul class="menu1">
-                    <!--NANTI WAHYU KIRIM ABOUT-->
-                    <li><a href="###">About</a></li>
-                    
+                    <li><a href="{% url 'about' %}">About</a></li>
                 </ul>
                 <ul class="menu2">
                     <li><a href="{% url 'login' %}">Login</a></li>
@@ -41,12 +39,12 @@
         </div>
         <div class="started">
             <div class="text-started">
-                <h3 class="h1">Ready to get started?</h3>
-                <h3 class="h2">It's free</h3>
+                <h3 class="h1">Ayo mulai memilih sekarang</h3>
+                <h3 class="h2">Mudah & Gratis</h3>
             </div>
             <div class="btn-home">
-                <a href="#" id="btn-create-poll"><button class="btn-create-poll">Create a poll</button></a>
-                <a href="#" id="btn-signup"><button class="btn-signup">Sign Up</button></a>
+                <a href="{% url 'voting' %}" id="btn-create-poll"><button class="btn-create-poll">Vote Sekarang</button></a>
+                
             </div>
         </div>
 
