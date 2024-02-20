@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'style2.css' %}">
+  <link rel="stylesheet" href="{% static 'voting.css' %}">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <title>voting page</title>
+  <title>SkenVote - Voting</title>
 </head>
 <body>
   <div class="homepage">
@@ -18,10 +18,7 @@
         <ul class="menu1">
           <li><a href="#">About</a></li>
         </ul>
-        <ul class="menu2">
-          <li><a href="#">Login</a></li>
-          <li><a href="#"><span>Sign Up</span></a></li>
-        </ul>
+
       </div>
     </nav>
     <div class="container-voting">
@@ -30,28 +27,32 @@
         oleh <span>KPU REPUBLIK INDONESIA</span>
         <p>Buat pilihan:</p>
         <div class="border-foto">
-          {% for kandidat in kandidat_list %}
+          
+          {% for x in image_pics %}
           <div class="fotoKandidat1" id="kandidat1">
-            <img src="{{ kandidat.foto1.url }}" alt="{{ kandidat.nama_kandidat1 }}" id="foto{{ forloop.counter }}" width="" height="180px">
+            <img src="{{ x.image.url }}" alt="{{ x.caption }}"  id="foto{{ forloop.counter }}" width="" height="180px">
             <div class="input1">
               <input type="radio" name="customRadio" id="myRadio1">
-              <h3>{{ kandidat.nama_kandidat1 }}</h3>
+              <h3>{{ x.caption }}</h3>
             </div>
           </div>
           {% endfor %}
-          {% for kandidat in kandidat_list %}
+
+          {% for x in gambar_pics %}
           <div class="fotoKandidat2" id="kandidat2">
-            <img src="{{ kandidat.foto2.url }}" alt="{{ kandidat.nama_kandidat2 }}" id="foto{{ forloop.counter }}" width="" height="180px">
+            <img src="{{ x.foto.url }}" alt="{{ x.deskripsi }}" id="foto{{ forloop.counter }}" width="" height="180px">
             <div class="input2">
               <input type="radio" name="customRadio" id="myRadio2">
-              <h3>{{ kandidat.nama_kandidat2 }}</h3>
+              <h3>{{ x.deskripsi }}</h3>
             </div>
           </div>
         </div>
         {% endfor %}
+
+      
         <div class="button">
           <div class="vote">
-            <a href="index.html"><button>VOTE <span><i class="bx bxs-right-arrow-alt"></i></span></button></a>
+            <a href="{% url 'BerhasilVoting' %}"><button>VOTE <span><i class="bx bxs-right-arrow-alt"></i></span></button></a>
           </div>
           <div class="result">
             <a href=""><button><span><i class="bx bxs-bar-chart-alt-2"></i></span>Lihat hasil</button></a>
@@ -85,6 +86,13 @@
     <p>&copy; 2024 SKENVOTE. All Rights Reserved.</p>
   </div>
 
-  <script src="{% static 'script.js' %}"></script>
+  <script src="{% static 'script.js' %}">
+    window.onload = function() {
+    var images = document.querySelectorAll('.fotoKandidat1 img');
+    images.forEach(function(img) {
+        img.style.width = img.offsetWidth + 'px'; // Atur lebar gambar menjadi lebar aslinya
+    });
+}
+  </script>
 </body>
 </html>
